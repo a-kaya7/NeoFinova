@@ -1,0 +1,14 @@
+package model.benutzer.aussensicht;
+
+public class BenutzerBean {
+	
+	private String vorname;
+	private String nachname;
+	private String username;
+	private String password;
+	private String password_re;
+	private String datum;
+	private String auswähl;
+
+
+}

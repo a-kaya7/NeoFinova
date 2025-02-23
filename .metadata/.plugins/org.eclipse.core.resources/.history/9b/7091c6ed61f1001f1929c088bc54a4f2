@@ -1,0 +1,76 @@
+package persistence.benutzer;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import model.benutzer.aussensicht.BenutzerBean;
+import persistence.DAOVerbindung.DBVerbindung;
+
+public class BenutzerAnlegenDAO {
+	
+	private static final String CREATE_TABLE_SQL = """
+			CREATE TABLE IF NOT EXISTS USERS (
+			    VORNAME VARCHAR(30) NOT NULL,
+			    NACHNAME VARCHAR(30) NOT NULL,
+			    USERNAME VARCHAR(30) NOT NULL,
+			    PASSWORD VARCHAR(25) NOT NULL,
+			    PASSWORDWIEDERHOLUNG VARCHAR(25) NOT NULL,
+			    DATE VARCHAR(30) UNIQUE NOT NULL,
+			    BENUTZERTYP VARCHAR(30) NOT NULL
+			);
+			""";
+	
+	private static final String INSERT_SQL = """
+			INSERT INTO USERS (VORNAME, NACHNAME,USERNAME, PASSWORD, PASSWORDWIEDERHOLUNG,DATE, BENUTZERTYP)
+			VALUES (?,?,?,?,?,?,?);
+			""";
+
+
+	public BenutzerAnlegenDAO() {
+		initializeTable();
+	}
+	
+private void initializeTable() {
+		
+		try { 
+			Connection connection = DBVerbindung.getConnection();
+		
+				if(connection == null) {
+					throw new SQLException();
+				}
+				
+				PreparedStatement statement = connection.prepareStatement(CREATE_TABLE_SQL);
+			statement.executeUpdate();
+			
+				} catch (SQLException e) {
+			
+		}
+}
+		
+		public boolean benutzerAnlegen(BenutzerBean beBean) throws SQLException {
+
+			boolean status = false;
+
+			try (Connection connection = DBVerbindung.getConnection();
+					PreparedStatement statement = connection.prepareStatement(INSERT_SQL)) {
+				
+				statement.setString(1, beBean.getVorname());
+				statement.setString(2, beBean.getNachname());
+				statement.setString(3, beBean.getUsername());
+				statement.setString(4, beBean.getPassword());
+				statement.setString(5, beBean.getPassword_re());
+				statement.setString(6, beBean.getDatum());
+				statement.setString(7, beBean.getTyp());
+				
+				int row = statement.executeUpdate();
+				 status = row >0;
+				
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+			return status;
+
+
+}
+}

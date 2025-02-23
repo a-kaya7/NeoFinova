@@ -1,0 +1,24 @@
+package persistence.benutzer;
+
+public class BenutzerAnlegenDAO {
+	
+	private static final String CREATE_TABLE_SQL = """
+			CREATE TABLE IF NOT EXISTS USERS (
+			    VORNAME VARCHAR(30) NOT NULL,
+			    NACHNAME VARCHAR(30) NOT NULL,
+			    USERNAME VARCHAR(30) NOT NULL,
+			    PASSWORD VARCHAR(25) NOT NULL,
+			    PASSWORDWIEDERHOLUNG VARCHAR(25) NOT NULL,
+			    DATE VARCHAR(30) UNIQUE NOT NULL,
+			    BENUTZERTYP VARCHAR(30) NOT NULL
+			);
+			""";
+	
+	private static final String INSERT_SQL = """
+			INSERT INTO USERS (VORNAME, NACHNAME,USERNAME, PASSWORD, PASSWORDWIEDERHOLUNG,DATE, BENUTZERTYP)
+			VALUES (?,?,?,?,?,?,?);
+			""";
+
+
+
+}
