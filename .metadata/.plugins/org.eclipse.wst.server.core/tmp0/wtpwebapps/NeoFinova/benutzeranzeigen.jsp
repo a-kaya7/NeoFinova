@@ -1,13 +1,103 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="administration.jsp"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.benutzer.aussensicht.BenutzerBean" %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Benutzer Anzeigen</title>
+    <style>
+    body{
+    font-family: Arial, sans-serif;
+	backround-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+    
+    }
+    .container {
+    witdh: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    backround: white;
+    position: absolute;
+    top: 10%;
+    left: 250px;
+    transform: translateY8-50%);
+    }
+        table {
+            width: 150%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #00BFFF;
+            color: white;
+        }
+        .icon {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>Herzlich Willkommen</h1>
+    
+    <div class ="container">
+    <h2>Benutzer Liste</h2>
+		<table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Username</th>
+            <th>Gültig Bis</th>
+            <th>Benutzer Typ</th>
+            <th>Actionen</th>
+        </tr>
+        <%
+            List<BenutzerBean> benutzerListe = (List<BenutzerBean>) request.getAttribute("benutzerListe");
+            if (benutzerListe != null) {
+                for (BenutzerBean benutzerl : benutzerListe) {
+                	 if (benutzerl.getVorname() != null && !benutzerl.getVorname().isEmpty()) {
+        %>
+			<tr>
+				<td><%= benutzerl.getVorname() %></td>
+				<td><%= benutzerl.getNachname() %></td>
+				<td><%= benutzerl.getUsername() %></td>
+				<td><%= benutzerl.getDatum() %></td>
+				<td><%= benutzerl.getBenutzerTyp() %></td>
+				<td>
+				
+					<form action="BenutzerLöschenServlet" method="post" onsubmit="return confirm('Möchten Sie sicher löschen?');">
+					<input type="hidden" name="username" value="<%= benutzer.getUsername() %>">
+                         <!-- bearbeiten -->
+						<button type = "submit" class="bearbeiten-button">
+						<i class="fas fa-edit icon" title="bearbeiten"></i>
+						</button>
+						<!-- löschen -->
+						<button type="submit" class="delete-button">
+							<i class="fas fa-trash" title="löschen"></i>
+						</button>
+					</form>
+				</td>
+			</tr>
 
+
+			<%
+			}
+			}
+			}
+			%>
+       
+        
+    </table>
+    </div>
 </body>
 </html>

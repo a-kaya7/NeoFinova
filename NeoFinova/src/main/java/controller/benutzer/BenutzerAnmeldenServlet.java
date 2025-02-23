@@ -31,8 +31,18 @@ public class BenutzerAnmeldenServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		if ("username".equals(username) && "password".equals(password)) {
+			BenutzerBean benutzer = new BenutzerBean();
+			
+			benutzer.setUsername(username);
+			request.getSession().setAttribute("benutzerBean", benutzer);
+			response.sendRedirect("navigation.jsp");
+		}else {
+			response.sendRedirect("anmelden.jsp");
+		}
 	}
 
 	/**
@@ -45,6 +55,9 @@ public class BenutzerAnmeldenServlet extends HttpServlet {
 		BenutzerBean bBean =  new BenutzerBean();
 		bBean.setUsername(username);
 		bBean.setPassword(password);
+		request.getSession().setAttribute("benutzerBean", bBean);
+		
+		
 		
 		
 		BenutzerAnmeldenDAO bDao = new BenutzerAnmeldenDAO();

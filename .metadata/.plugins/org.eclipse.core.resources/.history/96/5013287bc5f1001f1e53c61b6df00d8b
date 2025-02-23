@@ -1,0 +1,5 @@
+package model.benutzer.aussensicht;
+
+public interface IBenutzerAnmelden {
+
+}

@@ -1,0 +1,5 @@
+package model.benutzer.innensicht;
+
+public class BenutzerAnmelden {
+
+}

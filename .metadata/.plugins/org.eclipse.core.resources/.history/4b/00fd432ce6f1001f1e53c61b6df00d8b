@@ -1,0 +1,5 @@
+package persistence.benutzer;
+
+public class BenutzerLöschenDAO {
+
+}

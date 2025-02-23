@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 1200px; /* Maksimum genişlik belirle */
+    max-width: 1200px; 
     margin: auto;
 }
 

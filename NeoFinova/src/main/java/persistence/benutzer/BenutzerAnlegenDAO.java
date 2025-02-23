@@ -66,7 +66,6 @@ public class BenutzerAnlegenDAO {
 			
 
 			int row = statement.executeUpdate();
-			System.out.println("Etkilenen satır sayısı: " + row);
 			status = row > 0;
 
 		} catch (SQLException e) {

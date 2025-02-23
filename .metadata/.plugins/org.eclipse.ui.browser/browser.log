@@ -1,0 +1,58 @@
+
+Feb 23, 2025 09:29:35.54 NEW SESSION
+Feb 23, 2025 09:29:35.58 [15836:14288:0223/092935.539:ERROR:app_bound_encryption_provider_win.cc(100)] Unable to decrypt key. Result: Das System kann die angegebene Datei nicht finden. (0x80070002) GetLastError: 31
+Feb 23, 2025 09:29:36.01 [15836:17768:0223/092936.009:ERROR:device_event_log_impl.cc(199)] [09:29:36.010] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:29:36.13 [15836:10868:0223/092936.138:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Die Daten sind unzulässig. (0xD)
+Feb 23, 2025 09:29:36.14 [15836:10868:0223/092936.138:ERROR:token_service_table.cc(189)] Failed to decrypt token for service AccountId-110184650031638266409
+Feb 23, 2025 09:29:36.16 [15836:17768:0223/092936.162:ERROR:device_event_log_impl.cc(199)] [09:29:36.163] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:29:37.83 [15836:17768:0223/092937.834:ERROR:device_event_log_impl.cc(199)] [09:29:37.835] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:29:39.53 [15836:5580:0223/092939.530:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:29:40.63 Created TensorFlow Lite XNNPACK delegate for CPU.
+Feb 23, 2025 09:30:01.21 [15836:5580:0223/093001.217:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:30:44.71 [15836:17768:0223/093044.717:ERROR:device_event_log_impl.cc(199)] [09:30:44.717] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:30:51.50 [15836:5580:0223/093051.505:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:31:02.29 [15836:17768:0223/093102.296:ERROR:device_event_log_impl.cc(199)] [09:31:02.296] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:31:07.71 [15836:17768:0223/093107.716:ERROR:device_event_log_impl.cc(199)] [09:31:07.717] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element nicht gefunden. (0x490)
+Feb 23, 2025 09:32:08.33 [15836:17768:0223/093208.331:ERROR:device_event_log_impl.cc(199)] [09:32:08.331] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:32:26.49 [15836:5580:0223/093226.494:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:32:27.65 [15836:17768:0223/093227.659:ERROR:device_event_log_impl.cc(199)] [09:32:27.658] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:32:45.25 [12732:18072:0223/093245.256:ERROR:app_bound_encryption_provider_win.cc(100)] Unable to decrypt key. Result: Das System kann die angegebene Datei nicht finden. (0x80070002) GetLastError: 31
+Feb 23, 2025 09:32:45.55 [12732:20040:0223/093245.541:ERROR:device_event_log_impl.cc(199)] [09:32:45.540] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:32:45.71 [12732:17780:0223/093245.690:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Die Daten sind unzulässig. (0xD)
+Feb 23, 2025 09:32:45.71 [12732:17780:0223/093245.691:ERROR:token_service_table.cc(189)] Failed to decrypt token for service AccountId-110184650031638266409
+Feb 23, 2025 09:32:45.71 [12732:20040:0223/093245.714:ERROR:device_event_log_impl.cc(199)] [09:32:45.714] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:32:46.58 [12732:20040:0223/093246.580:ERROR:device_event_log_impl.cc(199)] [09:32:46.580] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:32:48.25 [12732:6092:0223/093248.255:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:32:48.40 Created TensorFlow Lite XNNPACK delegate for CPU.
+Feb 23, 2025 09:33:14.25 [12732:20040:0223/093314.256:ERROR:device_event_log_impl.cc(199)] [09:33:14.256] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:33:16.69 [12732:6092:0223/093316.691:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:34:08.05 [12732:6092:0223/093408.058:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:35:35.49 [12732:20040:0223/093535.491:ERROR:device_event_log_impl.cc(199)] [09:35:35.492] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:35:59.07 [12732:6092:0223/093559.069:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:39:57.59 [12732:6092:0223/093957.598:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:42:08.22 [12732:20040:0223/094208.228:ERROR:device_event_log_impl.cc(199)] [09:42:08.229] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:50:25.35 [12108:11028:0223/095025.351:ERROR:app_bound_encryption_provider_win.cc(100)] Unable to decrypt key. Result: Das System kann die angegebene Datei nicht finden. (0x80070002) GetLastError: 31
+Feb 23, 2025 09:50:25.73 [12108:14228:0223/095025.732:ERROR:device_event_log_impl.cc(199)] [09:50:25.732] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:50:25.86 [12108:22392:0223/095025.858:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Die Daten sind unzulässig. (0xD)
+Feb 23, 2025 09:50:25.86 [12108:22392:0223/095025.858:ERROR:token_service_table.cc(189)] Failed to decrypt token for service AccountId-110184650031638266409
+Feb 23, 2025 09:50:25.96 [12108:14228:0223/095025.962:ERROR:device_event_log_impl.cc(199)] [09:50:25.962] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:50:26.70 [12108:14228:0223/095026.700:ERROR:device_event_log_impl.cc(199)] [09:50:26.700] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:50:28.92 [12108:4744:0223/095028.921:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:50:29.79 Created TensorFlow Lite XNNPACK delegate for CPU.
+Feb 23, 2025 09:50:57.53 [12108:4744:0223/095057.538:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:51:38.49 [12108:4744:0223/095138.492:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:52:08.41 [12108:14228:0223/095208.413:ERROR:device_event_log_impl.cc(199)] [09:52:08.413] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:52:44.77 [12108:14228:0223/095244.776:ERROR:device_event_log_impl.cc(199)] [09:52:44.777] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:52:48.44 [12108:14228:0223/095248.442:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Feb 23, 2025 09:52:48.44 [12108:14228:0223/095248.442:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Feb 23, 2025 09:53:36.17 [12108:4744:0223/095336.178:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:53:41.77 [12108:14228:0223/095341.773:ERROR:device_event_log_impl.cc(199)] [09:53:41.774] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:55:06.69 [12108:14228:0223/095506.698:ERROR:device_event_log_impl.cc(199)] [09:55:06.698] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:57:00.82 [12108:4744:0223/095700.825:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Feb 23, 2025 09:57:20.65 [12108:14228:0223/095720.659:ERROR:device_event_log_impl.cc(199)] [09:57:20.660] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 09:57:43.76 [12108:14228:0223/095743.763:ERROR:device_event_log_impl.cc(199)] [09:57:43.763] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 10:02:58.38 [12108:14228:0223/100258.380:ERROR:device_event_log_impl.cc(199)] [10:02:58.381] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+Feb 23, 2025 10:02:59.08 [12108:14228:0223/100259.088:ERROR:device_event_log_impl.cc(199)] [10:02:59.089] Display: display_layout.cc:556 PlacementList must be sorted by first 8 bits of display_id
+
+Feb 23, 2025 21:07:45.69 NEW SESSION
+Feb 23, 2025 21:07:45.70 [ERROR viaduct::backend::ffi] Missing HTTP status

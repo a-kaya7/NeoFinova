@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="administration.jsp"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.benutzer.aussensicht.BenutzerBean" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +11,9 @@
 <style>
 body {
 	font-family: Arial, sans-serif;
-	backround-color: #f4f4f4;
+	background-color: white;
 	margin: 0;
-	panding: 0;
+	padding: 0;
 }
 
 .container {
@@ -73,6 +75,11 @@ button {
 	bottom: 10px;
 	right: 10px;
 }
+.required {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -90,17 +97,17 @@ button {
 				<div class="error" id="nachnameError"></div>
 			</div>
 			<div class="form-group">
-				<label for="username">Username</label> 
+				<label for="username">Username <span class="required" title="Dieses Feld ist erforderlich!">*</span></label> 
 				<input type="text" name="username">
 				<div class="error" id="usernameError"></div>
 			</div>
 			<div class="form-group">
-				<label for="password">Passwort</label> 
+				<label for="password">Passwort <span class="required" title="Dieses Feld ist erforderlich!">*</span></label> 
 				<input type="password" name="password">
 				<div class="error" id="passwordError"></div>
 			</div>
 			<div class="form-group">
-				<label for="password">Passwort Wiederholen</label> 
+				<label for="password">Passwort Wiederholen <span class="required" title="Dieses Feld ist erforderlich!">*</span></label> 
 				<input type="password" name="passwordWiederholung">
 				<div class="error" id="passwordWiederholungError"></div>
 			</div>
@@ -114,16 +121,13 @@ button {
 				<input type="text" name="benutzerTyp">
 				<div class="error" id="benutzerTypError"></div>
 			</div>
-			
-		</form>
-		<form action="benutzeranlegen" method="post">
-		    <button type="submit">Anlegen</button>
+			<button type="submit">Anlegen</button>
 			<button type="submit">Abbrechen</button>
-			<button type="submit" class="benutzer-btn">Benutzer Anzeigen</button>
+			<button type="button" class="benutzer-btn" onclick="window.location.href='benutzeranzeigen'">Benutzer Anzeigen</button>
+			
+		
 		</form>
-
-
-
+	
 	</div>
 
 </body>
